@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Textarea Processing Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Biometry Helper</title>
+
+
+
+
 </head>
 <body>
 
-<textarea id="inputTextarea" rows="10" cols="50" placeholder="Paste your content here..."></textarea>
+<form action="/submit" method="post" accept-charset="macintosh">
+<textarea id="inputTextarea" rows="10" cols="50" placeholder="Paste the raw biometry data here..."></textarea>
 <input type="text" id="targetTextField">
+</form>
 <button onclick="processContent()">Process Content</button>
 <button onclick="saveFile()">Save File</button>
+<p id="feedback">⏲ Waiting for input...</p>
 <script src="textRefiner.js" defer></script>
 
 </body>

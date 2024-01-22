@@ -44,6 +44,8 @@ function processContent() {
     // Output the buffered lines
     console.log("Buffered Lines:");
     console.log(buffer);
+    const feedbackText = document.getElementById('feedback');
+    feedbackText.textContent = "✅ Done processing!"
 
     // You can perform further processing or output the buffer as needed
 }
